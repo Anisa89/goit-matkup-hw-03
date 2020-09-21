@@ -1,19 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 body {
   font-family: roboto, sans-serif;
   font-style: normal;
 }
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /*header html*/
 .header {
   background: #ffffff;
+  /* padding: 32px 0;*/
 }
-
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: Raleway;
   font-weight: bold;
@@ -24,6 +46,9 @@ body {
   letter-spacing: 0.03em;
 
   color: #2196f3;
+}
+.logo-link {
+  margin-right: 92px;
 }
 .logo-two {
   font-family: Raleway;
@@ -45,7 +70,16 @@ body {
 
   color: #212121;
 }
-
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 .nav-portfolio-link,
 .nav-contakts-link {
   font-weight: 500;
@@ -61,6 +95,12 @@ body {
   font-style: normal;
 }
 
+.header .address {
+  margin-left: auto;
+}
+.header-address-list {
+  display: flex;
+}
 .header-mail-link {
   font-weight: 500;
   font-size: 14px;
@@ -75,6 +115,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-right: 50px;
 }
 /*header navigation hover*/
 .nav-link:hover,
@@ -92,11 +133,16 @@ body {
   color: #2196f3;
 }
 /*main index.html*/
+.main {
+}
 /*Hero*/
 .Hero {
   background: #2f303a;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .title-hero {
   font-family: Roboto;
   font-weight: 900;
@@ -109,11 +155,19 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
+
+  align-content: center;
+}
+.wraper-title {
+  padding-left: 30px;
 }
 .wraper-button-hero {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  align-content: center;
+  padding: 30px;
 }
 .button-hero {
   font-weight: 700;
@@ -129,7 +183,25 @@ body {
 .button-hero-link:focus {
   color: #212121;
 }
+.button-hero1-link {
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
 /*features*/
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title-advantages {
   font-weight: bold;
   font-size: 14px;
@@ -138,6 +210,18 @@ body {
   text-transform: uppercase;
 
   color: #212121;
+}
+.feature-item {
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 30px;
+  margin-bottom: 30px;
+}
+.wraper-features {
+  align-items: center;
 }
 .desc-title-advantages {
   font-weight: normal;
@@ -148,9 +232,17 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+  width: 270px;
 }
 /*description of services*/
 
+.description-services-item-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.item-services:not(:last-child) {
+  margin-right: 30px;
+}
 .title-description {
   font-weight: bold;
   font-size: 36px;
@@ -159,9 +251,17 @@ body {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 50px;
 }
 
 /*Team*/
+.team {
+  background: #f5f4fa;
+}
+.wraper-team {
+  padding-bottom: 47px;
+}
+
 .title-team {
   font-weight: bold;
   font-size: 36px;
@@ -170,6 +270,16 @@ body {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 54px;
+  margin-top: 99px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.item-team:not(:last-child) {
+  margin-right: 30px;
 }
 .title-name {
   font-weight: 500;
@@ -181,6 +291,11 @@ body {
 
   color: #212121;
 }
+.team-description {
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
 .desc-profession {
   font-weight: normal;
   font-size: 16px;
@@ -191,11 +306,20 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+  padding-bottom: 30px;
 }
 
 /*Footer html*/
 .footer {
   background: #2f303a;
+}
+.nav-footer {
+  /*width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;*/
+  padding-left: 215px;
 }
 .logo-footer {
   font-family: Raleway;
