@@ -172,18 +172,20 @@ img {
 .button-hero {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875
   text-align: center;
   align-items: center;
   letter-spacing: 0.06em;
   background: #188ce8;
   color: #ffffff;
+  border-radius: 4px;
 }
-.button-hero1-link:hover,
+.button-hero-link:hover,
 .button-hero-link:focus {
-  color: #212121;
+color:  rgba(0, 0, 0, 0.25);
 }
-.button-hero1-link {
+
+.button-hero-link {
   padding: 10px 32px;
   font-weight: bold;
   font-size: 16px;
@@ -197,6 +199,7 @@ img {
 
   color: #ffffff;
 }
+
 /*features*/
 .features {
   padding-top: 94px;
@@ -211,8 +214,7 @@ img {
 
   color: #212121;
 }
-.feature-item {
-}
+
 
 .features-list {
   display: flex;
@@ -223,6 +225,7 @@ img {
 .wraper-features {
   align-items: center;
 }
+
 .desc-title-advantages {
   font-weight: normal;
   font-size: 14px;
@@ -240,9 +243,11 @@ img {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .item-services:not(:last-child) {
   margin-right: 30px;
 }
+
 .title-description {
   font-weight: bold;
   font-size: 36px;
@@ -281,6 +286,7 @@ img {
 .item-team:not(:last-child) {
   margin-right: 30px;
 }
+
 .title-name {
   font-weight: 500;
   font-size: 16px;
@@ -291,11 +297,13 @@ img {
 
   color: #212121;
 }
+
 .team-description {
   align-items: center;
   text-align: center;
   padding-top: 10px;
 }
+
 .desc-profession {
   font-weight: normal;
   font-size: 16px;
@@ -310,17 +318,18 @@ img {
 }
 
 /*Footer html*/
-.footer {
+.page-footer {
   background: #2f303a;
+  display: block;
+  height: 253px;
 }
-.nav-footer {
-  /*width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;*/
-  padding-left: 215px;
+
+.page-footer > .container {
+  display: flex;
+  height: 211px;
+  align-items: center;
 }
+
 .logo-footer {
   font-family: Raleway;
   font-weight: bold;
@@ -332,6 +341,7 @@ img {
 
   color: #2196f3;
 }
+
 .logo-footer-two {
   font-family: Raleway;
   font-weight: bold;
@@ -342,6 +352,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 .footer-map-link {
   font-family: Roboto;
   font-weight: normal;
@@ -352,7 +363,14 @@ img {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+  padding-top: 20px;
 }
+
+.tel-item,
+.mail-item {
+  padding-top: 9px;
+}
+
 .footer-tel-link,
 .footer-mail-link {
   font-family: Roboto;
@@ -365,6 +383,8 @@ img {
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+
 /******finish index.html******/
 
 /*body for portfolio*/
@@ -521,6 +541,7 @@ body {
   letter-spacing: 0.03em;
 
   color: #ffffff;
+  padding-top: 20px;
 }
 
 .footer-tel-link,
@@ -532,6 +553,10 @@ body {
 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.tel-item,
+.mail-item {
+  padding-top: 9px;
 }
 .footer-map-link:hover,
 .footer-map-link:focus,
