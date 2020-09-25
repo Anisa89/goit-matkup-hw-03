@@ -167,8 +167,8 @@ img {
 .Hero {
   background: #2f303a;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .title-hero {
@@ -247,7 +247,7 @@ color:  rgba(0, 0, 0, 0.25);
 .features-list {
   display: flex;
   flex-wrap: nowrap;
-  margin: 30px;
+  
   
 }
 .wraper-features {
@@ -362,13 +362,18 @@ border-radius: 0px 0px 4px 4px;
 .page-footer {
   background: #2f303a;
   display: block;
-  height: 253px;
+  
 }
 
 .page-footer > .container {
   display: flex;
-  height: 211px;
+
   align-items: center;
+}
+
+.nav-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -695,11 +700,10 @@ box-sizing: border-box;
 .page-footer {
   background: #2f303a;
   display: block;
-   height: 253px;
+   
 }
 .page-footer > .container {
   display: flex;
-  height: 211px;
   align-items: center;
 }
 
